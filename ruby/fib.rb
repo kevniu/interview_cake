@@ -1,5 +1,5 @@
 # problem 15 interview cake
-def fib(0)
+def fib(n)
   if n == 0
     return 0
   elsif n == 1
