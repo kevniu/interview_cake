@@ -16,6 +16,5 @@ def get_closing_paren(sentence, opening_paren_index)
           end
       end
   end
-
   raise Exception, "No closing parenthesis :("
 end
