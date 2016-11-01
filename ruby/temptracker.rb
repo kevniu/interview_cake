@@ -18,6 +18,20 @@ class TempTracker
   end
 
   def insert(temperature)
+
+    # for mode
+    @occurences[temperature] += 1
+    if @occurences[temperature] > @max_occurences
+      @mode = temperature
+      @max_occurences = @occurences[temperature]
+    end
+
+    # for mean
+    @total_numbers += 1
+    @total_sum += temperature
+    @mean = @total_sum / @total_numbers
+
+    # for min and max
     if @max_temp.nil? or temperature > @max_temp
       @max_temp = temperature
     end

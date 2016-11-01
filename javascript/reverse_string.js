@@ -10,7 +10,7 @@ function reverse_string(str){
   while (startIndex < endIndex){
     temp = wordArr[startIndex]
     wordArr[startIndex] = wordArr[endIndex]
-    wordArr[endIndex] = wordArr[startIndex]
+    wordArr[endIndex] = temp;
 
     startIndex++
     endIndex--
